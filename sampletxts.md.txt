@@ -1,0 +1,677 @@
+Microsoft Windows [Version 10.0.26200.8328]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\kathu>cd C:\Users\kathu\Desktop\projects\Indoor_maps
+
+C:\Users\kathu\Desktop\projects\Indoor_maps>npx expo install expo@^54.0.0 --fix
+› Installing 1 other package using npm
+› Using 54.0.0 instead of ~51.0.39 for expo because this version was explicitly provided. Packages excluded from dependency validation should be listed in expo.install.exclude in package.json. Learn more: https://docs.expo.dev/more/expo-cli/#configuring-dependency-validation
+> npm install
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 134 packages, removed 245 packages, changed 44 packages, and audited 1054 packages in 1m
+
+89 packages are looking for funding
+  run `npm fund` for details
+
+18 vulnerabilities (12 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+› Running npx expo install under the updated expo version
+> expo install --fix
+The following packages should be updated for best compatibility with the installed expo version:
+  @expo/metro-runtime@3.2.3 - expected version: ~6.1.2
+  @react-native-async-storage/async-storage@1.23.1 - expected version: 2.2.0
+  expo@54.0.0 - expected version: ~54.0.34
+  expo-asset@10.0.10 - expected version: ~12.0.13
+  expo-camera@15.0.16 - expected version: ~17.0.10
+  expo-sharing@12.0.1 - expected version: ~14.0.8
+  expo-speech@12.0.2 - expected version: ~14.0.8
+  expo-status-bar@1.12.1 - expected version: ~3.0.9
+  react@18.2.0 - expected version: 19.1.0
+  react-dom@18.2.0 - expected version: 19.1.0
+  react-native@0.74.5 - expected version: 0.81.5
+  react-native-gesture-handler@2.16.2 - expected version: ~2.28.0
+  react-native-reanimated@3.10.1 - expected version: ~4.1.1
+  react-native-svg@15.2.0 - expected version: 15.12.1
+  react-native-web@0.19.13 - expected version: ^0.21.0
+  @types/react@18.2.79 - expected version: ~19.1.10
+Your project may not work correctly until you install the expected versions of the packages.
+› Installing 16 SDK 54.0.0 compatible native modules using npm
+> npm install
+
+added 6 packages, removed 51 packages, changed 38 packages, and audited 1009 packages in 26s
+
+78 packages are looking for funding
+  run `npm fund` for details
+
+18 vulnerabilities (12 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+› Running npx expo install under the updated expo version
+> expo install --fix
+The following packages should be updated for best compatibility with the installed expo version:
+  @expo/metro-runtime@3.2.3 - expected version: ~6.1.2
+  @react-native-async-storage/async-storage@1.23.1 - expected version: 2.2.0
+  expo-asset@10.0.10 - expected version: ~12.0.13
+  expo-camera@15.0.16 - expected version: ~17.0.10
+  expo-sharing@12.0.1 - expected version: ~14.0.8
+  expo-speech@12.0.2 - expected version: ~14.0.8
+  expo-status-bar@1.12.1 - expected version: ~3.0.9
+  react@18.2.0 - expected version: 19.1.0
+  react-dom@18.2.0 - expected version: 19.1.0
+  react-native@0.74.5 - expected version: 0.81.5
+  react-native-gesture-handler@2.16.2 - expected version: ~2.28.0
+  react-native-reanimated@3.10.1 - expected version: ~4.1.1
+  react-native-svg@15.2.0 - expected version: 15.12.1
+  react-native-web@0.19.13 - expected version: ^0.21.0
+  @types/react@18.2.79 - expected version: ~19.1.10
+Your project may not work correctly until you install the expected versions of the packages.
+› Installing 15 SDK 54.0.0 compatible native modules using npm
+> npm install
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.0.0" from react-native-web@0.19.13
+npm warn node_modules/react-native-web
+npm warn   react-native-web@"^0.21.0" from the root project
+npm warn   1 more (expo-camera)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react-dom@"^18.0.0" from react-native-web@0.19.13
+npm warn node_modules/react-native-web
+npm warn   react-native-web@"^0.21.0" from the root project
+npm warn   1 more (expo-camera)
+npm warn ERESOLVE overriding peer dependency
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-native@0.81.5
+npm error Found: @types/react@18.2.79
+npm error node_modules/@types/react
+npm error   peerOptional @types/react@"^19.1.0" from @react-native/virtualized-lists@0.81.5
+npm error   node_modules/react-native/node_modules/@react-native/virtualized-lists
+npm error     @react-native/virtualized-lists@"0.81.5" from react-native@0.81.5
+npm error     node_modules/react-native
+npm error       react-native@"0.81.5" from the root project
+npm error       19 more (expo, @expo/metro-runtime, ...)
+npm error
+npm error Could not resolve dependency:
+npm error peerOptional @types/react@"^19.1.0" from react-native@0.81.5
+npm error node_modules/react-native
+npm error   react-native@"0.81.5" from the root project
+npm error   peer react-native@"*" from expo@54.0.34
+npm error   node_modules/expo
+npm error     expo@"~54.0.34" from the root project
+npm error     13 more (@expo/metro-config, @expo/prebuild-config, ...)
+npm error   18 more (@expo/metro-runtime, ...)
+npm error
+npm error Conflicting peer dependency: @types/react@19.2.14
+npm error node_modules/@types/react
+npm error   peerOptional @types/react@"^19.1.0" from react-native@0.81.5
+npm error   node_modules/react-native
+npm error     react-native@"0.81.5" from the root project
+npm error     peer react-native@"*" from expo@54.0.34
+npm error     node_modules/expo
+npm error       expo@"~54.0.34" from the root project
+npm error       13 more (@expo/metro-config, @expo/prebuild-config, ...)
+npm error     18 more (@expo/metro-runtime, ...)
+npm error
+npm error Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error C:\Users\kathu\AppData\Local\npm-cache\_logs\2026-05-11T06_57_52_181Z-eresolve-report.txt
+npm error A complete log of this run can be found in: C:\Users\kathu\AppData\Local\npm-cache\_logs\2026-05-11T06_57_52_181Z-debug-0.log
+Error: npm install exited with non-zero code: 1
+Error: npm install exited with non-zero code: 1
+    at ChildProcess.completionListener (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\spawn-async\build\spawnAsync.js:42:23)
+    at Object.onceWrapper (node:events:623:26)
+    at ChildProcess.emit (node:events:508:28)
+    at cp.emit (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\cross-spawn\lib\enoent.js:34:29)
+    at maybeClose (node:internal/child_process:1100:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+    ...
+    at spawnAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\spawn-async\build\spawnAsync.js:7:23)
+    at NpmPackageManager.runAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\package-manager\build\node\BasePackageManager.js:41:42)
+    at C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\package-manager\build\node\NpmPackageManager.js:36:20
+    at C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\package-manager\build\utils\spawn.js:14:34
+Error: npx expo install --fix exited with non-zero code: 1
+Error: npx expo install --fix exited with non-zero code: 1
+    at ChildProcess.completionListener (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\spawn-async\build\spawnAsync.js:42:23)
+    at Object.onceWrapper (node:events:623:26)
+    at ChildProcess.emit (node:events:508:28)
+    at cp.emit (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\cross-spawn\lib\enoent.js:34:29)
+    at maybeClose (node:internal/child_process:1100:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+    ...
+    at spawnAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\spawn-async\build\spawnAsync.js:7:23)
+    at installExpoPackageAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\expo\node_modules\@expo\cli\build\src\install\installExpoPackage.js:114:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async fixPackagesAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\expo\node_modules\@expo\cli\build\src\install\fixPackages.js:84:9)
+    at async installAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\expo\node_modules\@expo\cli\build\src\install\installAsync.js:121:16)
+Error: npx expo install --fix exited with non-zero code: 1
+Error: npx expo install --fix exited with non-zero code: 1
+    at ChildProcess.completionListener (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\spawn-async\build\spawnAsync.js:42:23)
+    at Object.onceWrapper (node:events:623:26)
+    at ChildProcess.emit (node:events:508:28)
+    at cp.emit (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\cross-spawn\lib\enoent.js:34:29)
+    at maybeClose (node:internal/child_process:1100:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+    ...
+    at spawnAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\spawn-async\build\spawnAsync.js:7:23)
+    at installExpoPackageAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\cli\build\src\install\installExpoPackage.js:102:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async installPackagesAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\cli\build\src\install\installAsync.js:165:16)
+
+C:\Users\kathu\Desktop\projects\Indoor_maps>npx expo install --fix
+The following packages should be updated for best compatibility with the installed expo version:
+  @expo/metro-runtime@3.2.3 - expected version: ~6.1.2
+  @react-native-async-storage/async-storage@1.23.1 - expected version: 2.2.0
+  expo-asset@10.0.10 - expected version: ~12.0.13
+  expo-camera@15.0.16 - expected version: ~17.0.10
+  expo-sharing@12.0.1 - expected version: ~14.0.8
+  expo-speech@12.0.2 - expected version: ~14.0.8
+  expo-status-bar@1.12.1 - expected version: ~3.0.9
+  react@18.2.0 - expected version: 19.1.0
+  react-dom@18.2.0 - expected version: 19.1.0
+  react-native@0.74.5 - expected version: 0.81.5
+  react-native-gesture-handler@2.16.2 - expected version: ~2.28.0
+  react-native-reanimated@3.10.1 - expected version: ~4.1.1
+  react-native-svg@15.2.0 - expected version: 15.12.1
+  react-native-web@0.19.13 - expected version: ^0.21.0
+  @types/react@18.2.79 - expected version: ~19.1.10
+Your project may not work correctly until you install the expected versions of the packages.
+› Installing 15 SDK 54.0.0 compatible native modules using npm
+> npm install
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"18.2.0" from react-native@0.74.5
+npm warn node_modules/react-native
+npm warn   react-native@"0.81.5" from the root project
+npm warn   17 more (@expo/devtools, @expo/vector-icons, expo, @expo/cli, ...)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react@18.2.0
+npm warn node_modules/react
+npm warn   react@"19.1.0" from the root project
+npm warn   18 more (@expo/devtools, @expo/vector-icons, expo, expo-font, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.0.0" from react-native-web@0.19.13
+npm warn node_modules/react-native-web
+npm warn   react-native-web@"^0.21.0" from the root project
+npm warn   1 more (expo-camera)
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: indoor-nav-india@1.0.0
+npm warn Found: react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.1.0" from the root project
+npm warn   2 more (react-native-web, @expo/metro-runtime)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react-dom@"^18.0.0" from react-native-web@0.19.13
+npm warn node_modules/react-native-web
+npm warn   react-native-web@"^0.21.0" from the root project
+npm warn   1 more (expo-camera)
+npm warn ERESOLVE overriding peer dependency
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-native@0.81.5
+npm error Found: @types/react@18.2.79
+npm error node_modules/@types/react
+npm error   peerOptional @types/react@"^19.1.0" from @react-native/virtualized-lists@0.81.5
+npm error   node_modules/react-native/node_modules/@react-native/virtualized-lists
+npm error     @react-native/virtualized-lists@"0.81.5" from react-native@0.81.5
+npm error     node_modules/react-native
+npm error       react-native@"0.81.5" from the root project
+npm error       19 more (expo, @expo/metro-runtime, ...)
+npm error
+npm error Could not resolve dependency:
+npm error peerOptional @types/react@"^19.1.0" from react-native@0.81.5
+npm error node_modules/react-native
+npm error   react-native@"0.81.5" from the root project
+npm error   peer react-native@"*" from expo@54.0.34
+npm error   node_modules/expo
+npm error     expo@"~54.0.34" from the root project
+npm error     13 more (@expo/metro-config, @expo/prebuild-config, ...)
+npm error   18 more (@expo/metro-runtime, ...)
+npm error
+npm error Conflicting peer dependency: @types/react@19.2.14
+npm error node_modules/@types/react
+npm error   peerOptional @types/react@"^19.1.0" from react-native@0.81.5
+npm error   node_modules/react-native
+npm error     react-native@"0.81.5" from the root project
+npm error     peer react-native@"*" from expo@54.0.34
+npm error     node_modules/expo
+npm error       expo@"~54.0.34" from the root project
+npm error       13 more (@expo/metro-config, @expo/prebuild-config, ...)
+npm error     18 more (@expo/metro-runtime, ...)
+npm error
+npm error Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error C:\Users\kathu\AppData\Local\npm-cache\_logs\2026-05-11T06_58_58_475Z-eresolve-report.txt
+npm error A complete log of this run can be found in: C:\Users\kathu\AppData\Local\npm-cache\_logs\2026-05-11T06_58_58_475Z-debug-0.log
+Error: npm install exited with non-zero code: 1
+Error: npm install exited with non-zero code: 1
+    at ChildProcess.completionListener (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\spawn-async\build\spawnAsync.js:42:23)
+    at Object.onceWrapper (node:events:623:26)
+    at ChildProcess.emit (node:events:508:28)
+    at cp.emit (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\cross-spawn\lib\enoent.js:34:29)
+    at maybeClose (node:internal/child_process:1100:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+    ...
+    at spawnAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\spawn-async\build\spawnAsync.js:7:23)
+    at NpmPackageManager.runAsync (C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\package-manager\build\node\BasePackageManager.js:41:42)
+    at C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\package-manager\build\node\NpmPackageManager.js:36:20
+    at C:\Users\kathu\Desktop\projects\Indoor_maps\node_modules\@expo\package-manager\build\utils\spawn.js:14:34
+
+C:\Users\kathu\Desktop\projects\Indoor_maps>npx expo start --clear
+Starting project at C:\Users\kathu\Desktop\projects\Indoor_maps
+Starting Metro Bundler
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+The following packages should be updated for best compatibility with the installed expo version:
+  @expo/metro-runtime@3.2.3 - expected version: ~6.1.2
+  @react-native-async-storage/async-storage@1.23.1 - expected version: 2.2.0
+  expo-asset@10.0.10 - expected version: ~12.0.13
+  expo-camera@15.0.16 - expected version: ~17.0.10
+  expo-sharing@12.0.1 - expected version: ~14.0.8
+  expo-speech@12.0.2 - expected version: ~14.0.8
+  expo-status-bar@1.12.1 - expected version: ~3.0.9
+  react@18.2.0 - expected version: 19.1.0
+  react-dom@18.2.0 - expected version: 19.1.0
+  react-native@0.74.5 - expected version: 0.81.5
+  react-native-gesture-handler@2.16.2 - expected version: ~2.28.0
+  react-native-reanimated@3.10.1 - expected version: ~4.1.1
+  react-native-svg@15.2.0 - expected version: 15.12.1
+  react-native-web@0.19.13 - expected version: ^0.21.0
+  @types/react@18.2.79 - expected version: ~19.1.10
+Your project may not work correctly until you install the expected versions of the packages.
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █ ██▀▀█▄▄██ ▄▄▄▄▄ █
+█ █   █ █  ▀█ ▀█ ▄█ █   █ █
+█ █▄▄▄█ █▀  █▄▄▀▄██ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄█ ▀▄█▄█ █▄▄▄▄▄▄▄█
+█  █▀ ▄▄▀██▄█▄▀▄▀▄██ ▀▄▄ ▄█
+█▄ █▀▄█▄▄  ▄█▀▄█▄ ▀ █▄  ▀██
+█  ▀▀▄█▄▄▄█▀▄ █▄▀▄▀▄▀▀▄ ▀██
+████▀▄█▄ ▀▄█ ▄██▄▄▄█▄▀ ▀███
+█▄▄▄█▄█▄█▀▀▄▀▀█▄▄ ▄▄▄ ▀ ▄▄█
+█ ▄▄▄▄▄ █▀ █ █▄█▀ █▄█ ▀▀▀▀█
+█ █   █ █▄▀▀ ▀█▄█▄▄ ▄▄▀ ▀▀█
+█ █▄▄▄█ █▀▀  ███▄██▄▀█▀▀ ██
+█▄▄▄▄▄▄▄█▄█▄███▄████▄▄▄▄▄▄█
+
+› Metro waiting on exp://192.168.220.228:8081
+› Scan the QR code above with Expo Go (Android) or the Camera app (iOS)
+
+› Web is waiting on http://localhost:8081
+
+› Using Expo Go
+› Press s │ switch to development build
+
+› Press a │ open Android
+› Press w │ open web
+
+› Press j │ open debugger
+› Press r │ reload app
+› Press m │ toggle menu
+› shift+m │ more tools
+› Press o │ open project code in your editor
+
+› Press ? │ show all commands
+
+Logs for your project will appear below. Press Ctrl+C to exit.
