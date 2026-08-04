@@ -1,155 +1,128 @@
-# 🏛 IndoorNav — Indoor Navigation System
+# 🏛️ IndoorNav — Professional Indoor Navigation System
 
-> Turn-by-turn indoor navigation for colleges, airports & hospitals. Open-source, self-hostable, no GPS needed.
-
----
-
-## 🎯 Problem Statement
-
-Millions of people get lost inside large buildings every day. Google Maps stops at the entrance. There is no free, open-source indoor navigation solution for Indian institutions. IndoorNav solves this with custom SVG floor maps, graph-based pathfinding, and QR-based positioning — all self-hostable with zero licensing cost.
+> **Turn-by-turn indoor navigation for universities, colleges, hospitals, and airports.**  
+> Self-hostable, open-source, no GPS required. Features interactive SVG floor maps, server & client Dijkstra pathfinding, multi-floor stair/elevator routing, crowd scan heatmaps, room status management, and custom backend/Supabase integration.
 
 ---
 
-## ✨ Features
-
-### Mobile App (React Native + Expo)
-- 🗺 **Interactive SVG floor map** — pan, zoom, tap rooms
-- 🧭 **Turn-by-turn directions** — tap start + end room, route draws instantly
-- 🏢 **Multi-floor routing** — automatically routes through stairs or elevators
-- 📋 **Step-by-step directions** — floor-by-floor instruction list
-- ↕ **Cross-floor navigation** — elevator and staircase bridging between floors
-- 🕐 **Walking time estimate** — based on average walking speed
-
-### Admin Dashboard (React Web)
-- ✏️ **Map Editor** — draw rooms and nodes on canvas, drag to reposition
-- ⚫ **Node Manager** — manage graph nodes and corridor connections
-- 📷 **QR Code Generator** — auto-generates printable QR codes for each room
-- 🟢 **Room Status Manager** — mark rooms as Open / Occupied / Maintenance
-- 🔥 **Crowd Heatmap** — visualize QR scan frequency across floors
-- 📄 **Export floor plan** — download as PNG or IndoorGML JSON
-- 🖼 **Background image upload** — trace over real floor plan scans
-- ☁ **Save to Supabase** — persist maps to PostgreSQL database
-
-### Backend (Node.js + Express)
-- REST API for buildings, floors, routes, QR lookup
-- Server-side Dijkstra pathfinding
-- QR scan tracking for heatmap analytics
-- Room availability status sync
-- Supabase (PostgreSQL) integration
-
----
-
-## 🏗 Architecture
+## ✨ Features & Architecture
 
 ```
-Indoor_maps/
-├── App.tsx              ← React Native mobile app (Expo)
-├── server/
-│   └── index.js         ← Express REST API + Dijkstra
-├── admin/
-│   └── src/App.js       ← React web admin dashboard
-└── assets/              ← App icons and splash screen
+                       ┌─────────────────────────┐
+                       │   Admin Web Dashboard   │
+                       │   (React - Port 3000)   │
+                       └────────────┬────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────┐   HTTP REST    ┌─────────────────────────┐
+│   Mobile App (Expo)     │ ─────────────► │   Express REST Backend  │
+│  (React Native App.tsx) │ ◄───────────── │    (Node.js - Port 3001) │
+└─────────────────────────┘                └────────────┬────────────┘
+                                                        │
+                                            ┌───────────┴───────────┐
+                                            ▼                       ▼
+                                   ┌─────────────────┐    ┌──────────────────┐
+                                   │ Local DB Engine │    │ Supabase / Cloud │
+                                   │ (server/data/)  │    │   (PostgreSQL)   │
+                                   └─────────────────┘    └──────────────────┘
 ```
 
-```
-Phone (Expo Go)
-     ↕ HTTP
-Express Server (port 3001)
-     ↕ REST
-Supabase (PostgreSQL)
-```
+### 📱 Mobile Navigation App (`App.tsx`)
+- 🗺️ **Interactive SVG Map Canvas**: Multi-floor rendering, pan & recenter controls, room status badges.
+- 🔍 **Quick Room Search**: Instant search drawer for rooms across all floors.
+- 🧭 **Turn-by-Turn Directions**: Visual gradient route path with animated dashed line overlays.
+- 🏢 **Multi-Floor Routing**: Automatic routing through stairs & elevators with floor pill navigation.
+- 📋 **Step-by-Step Instructions**: Floor-by-floor step list with distance & walking time estimates.
+- ⚡ **Offline Resilience**: Automatic fallback to client-side graph pathfinding if server is offline.
+
+### 💻 Admin Map Editor & Dashboard (`admin/`)
+- ✏️ **Visual Canvas Map Editor**: Draw rooms, place corridor graph nodes, and connect edges.
+- 🖼️ **Floor Plan Tracing**: Upload background floorplan images to trace maps accurately.
+- 📷 **Printable QR Code Generator**: Generate room QR codes for indoor scanning & positioning.
+- 🟢 **Room Status Manager**: Real-time room status updates (Open / Occupied / Maintenance).
+- 🔥 **Heatmap Analytics**: Scan frequency visualizations per node and floor.
+- 📄 **Export Capabilities**: Export floor maps to PNG images or IndoorGML JSON files.
+
+### ⚡ Express REST API Backend (`server/`)
+- **Zero-Config Local Data Engine**: Works 100% out of the box with local JSON file persistence (`server/data/db.json`).
+- **Supabase Cloud Sync**: Seamlessly syncs with Supabase PostgreSQL when credentials are provided in `.env`.
+- **Custom Backend Integration**: Connects to your own personal backend endpoint easily.
+- **REST Endpoints**: `/api/buildings`, `/api/floors`, `/api/route`, `/api/scan`, `/api/heatmap`, `/api/rooms/status`, `/api/health`.
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 Quick Start (Windows / macOS / Linux)
 
-| Layer | Technology |
-|-------|-----------|
-| Mobile | React Native · Expo · react-native-svg |
-| Pathfinding | Dijkstra's Algorithm (client + server) |
-| Backend | Node.js · Express.js |
-| Database | Supabase (PostgreSQL) |
-| Admin Panel | React 18 · CSS-in-JS |
-| Deployment | Railway (server) · Vercel (admin) · EAS (APK) |
+### Option 1: Quick Launch Script (Windows)
 
----
+Simply double-click **`START-IndoorNav.bat`** to start all three components automatically:
+- 📌 **Admin Dashboard**: `http://localhost:3000`
+- 📌 **Backend Server**: `http://localhost:3001`
+- 📌 **Mobile App**: Metro Bundler (scan QR code with Expo Go app)
 
-## 📱 Phases Built
-
-| Phase | Feature |
-|-------|---------|
-| ✅ Phase 1 | SVG floor map renderer — pan, zoom, room tap |
-| ✅ Phase 2 | Dijkstra pathfinding — shortest route highlight |
-| ✅ Phase 3 | Multi-floor support — stair/elevator routing |
-| ✅ Phase 4 | QR-based positioning — scan to set location |
-| ✅ Phase 5 | Admin dashboard — draw rooms, export IndoorGML |
-| ✅ Phase 6 | Heatmap, room status, offline mode, voice directions |
+To stop all services, run **`STOP-IndoorNav.bat`**.
 
 ---
 
-## 🚀 Quick Start
+### Option 2: Manual Terminal Setup
 
-### Prerequisites
-- Node.js 18+
-- Expo Go app on your phone
-- Supabase account (free tier)
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/AbhyasKathuria/indoor-nav-india.git
-cd indoor-nav-india
-```
-
-### 2. Setup Server
-
+#### 1. Backend Server (`server/`)
 ```bash
 cd server
 npm install
+npm start
+# Express running on http://localhost:3001
 ```
 
-Create `server/.env`:
+*(Optional)* Create `server/.env` to link Supabase or a custom backend:
 ```env
 PORT=3001
 SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_KEY=your_anon_key
 ```
 
-```bash
-npm start
-```
-
-### 3. Setup Admin Panel
-
+#### 2. Admin Dashboard (`admin/`)
 ```bash
 cd admin
 npm install
-set HOST=127.0.0.1
 npm start
-# Admin at http://127.0.0.1:3000
+# Dashboard running on http://localhost:3000
 ```
 
-### 4. Setup Mobile App
-
+#### 3. Mobile App (Root)
 ```bash
-cd ..
+# In the root directory:
 npm install
+npx expo start
+# Scan QR code with Expo Go on your iOS/Android device
 ```
 
-Update `App.tsx` line 11:
-```ts
-const SERVER = "http://YOUR_LAN_IP:3001";
-```
+---
 
-```bash
-npx expo start --clear
-# Scan QR with Expo Go
-```
+## 🔌 API Reference
 
-### 5. Create Supabase Tables
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/health` | Server health & mode (local vs supabase) |
+| `GET` | `/api/buildings` | List all buildings |
+| `GET` | `/api/buildings/:id/floors` | Get floors for a building |
+| `GET` | `/api/floors/:id/map` | Get floor map JSON (rooms, nodes, edges) |
+| `POST` | `/api/upload-map` | Save new building & floor map schema |
+| `POST` | `/api/route` | Compute shortest path via Dijkstra algorithm |
+| `GET` | `/api/qr/:nodeId` | Look up room/node details by QR code ID |
+| `POST` | `/api/scan` | Register QR scan event for heatmap tracking |
+| `GET` | `/api/heatmap/:buildingId` | Retrieve scan frequency heatmap |
+| `GET` | `/api/floors/:id/status` | Get room status map for a floor |
+| `POST` | `/api/rooms/status` | Update room status (open/occupied/maintenance) |
 
-Go to Supabase Dashboard → SQL Editor → run:
+---
 
+## 🌐 Connecting Your Own Custom Backend or Supabase
+
+### Supabase Integration
+To connect your own Supabase instance:
+1. Create a Supabase project.
+2. Run the SQL schema script in Supabase SQL Editor:
 ```sql
 CREATE TABLE IF NOT EXISTS buildings (
   id SERIAL PRIMARY KEY,
@@ -179,96 +152,25 @@ CREATE TABLE IF NOT EXISTS room_status (
   UNIQUE(floor_id, room_id)
 );
 ```
+3. Add `SUPABASE_URL` and `SUPABASE_KEY` to `server/.env`.
 
 ---
 
-## 📖 How to Use
+## 📤 Pushing to GitHub
 
-### Mobile App
+To push this repository to your GitHub account:
 
-1. Tap **🧭 Get Directions**
-2. Tap a **start room** — turns green with "YOU"
-3. Tap an **end room** — turns red with "DEST"
-4. Route draws with dashed gradient line + distance + time
-5. Tap **📋** for step-by-step directions
-6. Switch floors with tabs — blue dot shows floors with route segments
-
-### Admin Dashboard
-
-1. Enter building name → click **Add Room** → click canvas
-2. Click rooms to rename and set type
-3. Click **Add Node** → place nodes on corridors
-4. Click **Add Edge** → connect nodes with weighted edges
-5. Click **☁ Save to DB** → saves to Supabase
-6. **QR Codes** tab → download printable QR for each room
-7. **Room Status** tab → mark rooms open/occupied/maintenance
-8. **Heatmap** tab → see which areas get scanned most
-
----
-
-## 🗺 Pathfinding Algorithm
-
-Dijkstra's algorithm on a weighted graph:
-
-- **Nodes** = corridor junctions and room entrances
-- **Edges** = corridor segments with distance weights
-- **Cross-floor edges** = elevator/stair connections with floor-change penalty
-
-```
-Start Node → [Dijkstra] → Shortest Path → SVG route highlight
-```
-
----
-
-## 🔌 API Reference
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/buildings` | List all buildings |
-| GET | `/api/buildings/:id/floors` | Get floors for a building |
-| GET | `/api/floors/:id/map` | Get floor map JSON |
-| POST | `/api/upload-map` | Create building from admin export |
-| POST | `/api/route` | Compute shortest path |
-| POST | `/api/scan` | Track QR scan (heatmap) |
-| GET | `/api/heatmap/:buildingId` | Get scan counts per node |
-| POST | `/api/rooms/status` | Update room availability |
-| GET | `/api/health` | Health check |
-
----
-
-## 🚢 Deployment
-
-### Backend → Railway
-1. Push to GitHub
-2. [railway.app](https://railway.app) → New Project → Deploy from GitHub
-3. Set root to `server/`
-4. Add env vars: `SUPABASE_URL`, `SUPABASE_KEY`
-
-### Admin → Vercel
-1. [vercel.com](https://vercel.com) → Import from GitHub
-2. Set root to `admin/`
-
-### Mobile → Expo EAS
 ```bash
-npm install -g eas-cli
-eas login
-eas build --platform android
+git init
+git add .
+git commit -m "feat: complete IndoorNav system upgrade - modernized UI/UX, offline fallback, and script fixes"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git push -u origin main
 ```
-
----
-
-## 🙋 Author
-
-**Abhyas Kathuria**
-- GitHub: [@AbhyasKathuria](https://github.com/AbhyasKathuria)
-- LinkedIn: [linkedin.com/in/abhyas-kathuria](https://linkedin.com/in/abhyas-kathuria)
 
 ---
 
 ## 📄 License
 
-MIT License — free to use, modify and distribute.
-
----
-
-*Built as Project 01/16 of a full-stack developer portfolio series.*
+MIT License — free for educational, institutional, and commercial use.

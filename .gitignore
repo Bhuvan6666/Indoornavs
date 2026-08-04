@@ -1,31 +1,29 @@
 # Dependencies
 node_modules/
+admin/node_modules/
+server/node_modules/
 
-# Expo
-.expo/
-dist/
-
-# Environment files
-.env
-.env.local
-.env.*.local
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-
-# Build outputs
-admin/build/
-*.tsbuildinfo
-node_modules/
-.env
-*.log
+# Expo & Web builds
 .expo/
 dist/
 build/
+admin/build/
 android/
 ios/
+
+# Local data & environment files
+server/data/
+.env
+.env.local
+.env.*.local
+server/.env
+
+# OS & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build outputs & logs
+*.tsbuildinfo
+*.log

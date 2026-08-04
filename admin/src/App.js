@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-const SERVER = "http://127.0.0.1:3001";
+const SERVER = process.env.REACT_APP_SERVER_URL || (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? `http://${window.location.hostname}:3001` : '');
 
 const ROOM_TYPES = {
   classroom: { color:"#0d1e38", border:"#1a3a6a", label:"Classroom" },
